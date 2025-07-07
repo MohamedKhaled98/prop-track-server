@@ -1,5 +1,7 @@
 # Node.js Server (TypeScript + Express)
 
+quick note: attached JSON file for (locations), please import it or seed into db.
+
 This is a basic Node.js server built using **TypeScript** and **Express**.
 
 ## Features
