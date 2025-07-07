@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Or a newer ES version like "ESNext"
+    "module": "commonjs", // Or "ESNext" if you want ES Modules
+    "outDir": "./dist", // Output directory for compiled JavaScript
+    "rootDir": "./src", // Root directory of your TypeScript source files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables better compatibility with CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing for file names
+    "typeRoots": ["src/@types", "./node_modules/@types"]
+  },
+
+  "include": ["src/**/*.ts"], // Include all .ts files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules from compilation
+}

@@ -1,0 +1,51 @@
+{
+  "name": "prop-track",
+  "version": "1.0.0",
+  "description": "a real estate web platform to help agents manage property",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "NODE_ENV=development && nodemon --exec ts-node src/server.ts",
+    "prestart": "npm run build"
+  },
+  "author": "Mohamed",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/hpp": "^0.2.6",
+    "@types/joi": "^17.2.2",
+    "@types/lodash": "^4.17.20",
+    "@types/mongoose": "^5.11.96",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.0.8",
+    "@types/winston": "^2.4.4",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "express-xss-sanitizer": "^2.0.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "joi": "^17.13.3",
+    "joi-objectid": "^4.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.16.1",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "sharp": "^0.34.2",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
