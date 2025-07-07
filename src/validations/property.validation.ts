@@ -2,7 +2,7 @@ import Joi from "joi";
 const priceSchema = Joi.object({
   value: Joi.number().required(),
   currency: Joi.string().default("AED"),
-  period: Joi.string().valid("monthly", "yearly").required(),
+  period: Joi.string().valid("monthly", "yearly").optional(),
 });
 
 const sizeSchema = Joi.object({

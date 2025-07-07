@@ -32,7 +32,7 @@ export interface PropertyAttributes {
 const PriceSchema = new Schema<Price>(
   {
     value: { type: Number, required: true },
-    period: { type: String, enum: ["monthly", "yearly"], required: true },
+    period: { type: String, enum: ["monthly", "yearly"] },
   },
   { _id: false }
 );
